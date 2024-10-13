@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Quảng Cáo</title>
+    
+    <!-- Cấu hình Open Graph -->
+    <meta property="og:title" content="Video Quảng Cáo">
+    <meta property="og:description" content="Khám phá sản phẩm mới và hấp dẫn trên Shopee!">
+    <meta property="og:image" content="URL_hình_ảnh_bìa"> <!-- Thay thế bằng URL hình ảnh bìa nếu cần -->
+    <meta property="og:url" content="https://nguyenthanhtrung3003.github.io/thanhtrung/"> <!-- Thay thế bằng URL trang của bạn -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:video" content="https://drive.google.com/uc?id=1HKxNbRRb8QtWaZcpQ-OP1eqPyVJpJO_p"> <!-- Thay thế bằng ID video từ Google Drive -->
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="640"> <!-- Kích thước video -->
+    <meta property="og:video:height" content="360">
+
+    <style>
+        .video-container {
+            position: relative;
+            cursor: pointer;
+            max-width: 50%;
+            overflow: hidden;
+            padding-top: 56.25%; /* Tỉ lệ 16:9 */
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0); /* Lớp phủ trong suốt */
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container" onclick="window.location.href='https://s.shopee.vn/g81pKbFFr';">
+        <iframe src="https://drive.google.com/file/d/1HKxNbRRb8QtWaZcpQ-OP1eqPyVJpJO_p/preview" width="640" height="480" allow="autoplay"></iframe>
+
+        <div class="overlay"></div> <!-- Lớp phủ trong suốt -->
+    </div>
+
+    <script>
+        function playVideo() {
+            var iframe = document.getElementById('video');
+            iframe.style.pointerEvents = 'auto'; // Bật sự kiện cho iframe để có thể tương tác
+        }
+    
+        function setRedirect() {
+            setTimeout(function() {
+                window.open('https://shopee.vn', '_blank'); // Mở trang Shopee trong tab mới
+            }, 5000); // Chuyển hướng sau 5 giây
+        }
+    </script>    
+    </body>
+    </html>
